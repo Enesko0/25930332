@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eko Selo na Kartonu</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.about, .projects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Dodato da bi se kartice slagale u redovima na manjim ekranima */
+    margin-top: 20px;
+}
+
+.about img, .projects img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px; /* Dodato da bi imalo više prostora između kartica */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media query za mobilne uređaje */
+@media (max-width: 768px) {
+    .about, .projects {
+        flex-direction: column; /* Kartice će biti poređene vertikalno na manjim ekranima */
+        align-items: center; /* Svi sadržaji su centrirani */
+    }
+
+    .card {
+        width: 80%; /* Kartice će biti šire i zauzimati više prostora na mobilnim uređajima */
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Eko Selo na Kartonu</h1>
+    <p>Prvenstveno za ekologiju, kreativnost i održivost</p>
+</header>
+
+<section>
+    <div class="about">
+        <div class="card">
+            <h2>O Eko Selu</h2>
+            <p>Eko selo napravljeno na kartonu je projekat koji promoviše ekološki način života koristeći reciklirane materijale poput kartona za gradnju i održavanje objekata.</p>
+            <img src="i.png" alt="Eko Selo">
+        </div>
+        <div class="card">
+            <h2>Naša Misija</h2>
+            <p>Cilj nam je da edukujemo ljude o važnosti reciklaže i održivih rešenja, stvarajući zajednicu koja se temelji na ekološkoj odgovornosti.</p>
+            <img src="i.png" alt="Misija Eko Sela">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Projekti</h2>
+    <div class="projects">
+        <div class="card">
+            <h3>Projekat 1: Kuće od kartona</h3>
+            <p>Prvi projekat u okviru eko sela je izgradnja kuća od recikliranog kartona, koje su ekološki prihvatljive i energetski efikasne.</p>
+            <img src="i.png" alt="Kuće od kartona">
+        </div>
+        <div class="card">
+            <h3>Projekat 2: Zeleni vrtovi</h3>
+            <p>Razvijamo zelene vrtove koristeći održive poljoprivredne prakse i reciklirane materijale za gajenje hrane.</p>
+            <img src="i.png" alt="Zeleni vrtovi">
+        </div>
+        <div class="card">
+            <h3>Projekat 3: Solarne ploče</h3>
+            <p>Instalacija solarnih panela na svim objektima u eko selu, čime smanjujemo naš ekološki otisak i povećavamo energetsku efikasnost.</p>
+            <img src= "i.png" alt="Solarne ploče">
+        </div>
+        <div class="card">
+            <h3>Projekat 4: Solarne ploče</h3>
+            <p>Instalacija solarnih panela na svim objektima u eko selu, čime smanjujemo naš ekološki otisak i povećavamo energetsku efikasnost.</p>
+            <img src= "i.png" alt="Solarne ploče">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Eko Selo na Kartonu | Sva prava zadržana</p>
+</footer>
+
+</body>
+</html>
